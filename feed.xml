@@ -1,0 +1,47 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://chienpang.github.io/</id>
+  <title>Lee, Chien-Pang</title>
+  <subtitle>Free style blogging about my day to day technical problem-solving tasks.</subtitle>
+  <updated>2026-04-07T15:24:29+02:00</updated>
+  <author>
+    <name>Lee, Chien-Pang</name>
+    <uri>https://chienpang.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://chienpang.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://chienpang.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2026 Lee, Chien-Pang </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>I don't have a say</title>
+    <link href="https://chienpang.github.io/posts/i-dont-have-a-say/" rel="alternate" type="text/html" title="I don&amp;apos;t have a say" />
+    <published>2026-04-07T04:36:00+02:00</published>
+  
+    <updated>2026-04-07T04:36:00+02:00</updated>
+  
+    <id>https://chienpang.github.io/posts/i-dont-have-a-say/</id>
+    <content type="text/html" src="https://chienpang.github.io/posts/i-dont-have-a-say/" />
+    <author>
+      <name>Lee, Chien-Pang</name>
+    </author>
+
+  
+    
+    <category term="Minds" />
+    
+  
+
+  <summary>Why bother hussling with blogging on GitHub and put myself in a state where I have to constently struggle with writing and editing? Even at this moment this recurring question lingers in my head. All in all, it’s a combination of multiple factors, numerous instances and mental journeys that happened over the past years; all leading to one question. How do I better controll my own work? To be mo...</summary>
+
+  </entry>
+
+</feed>
+
+
