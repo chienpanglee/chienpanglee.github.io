@@ -30,28 +30,28 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="I don’t have a say" />
+<meta property="og:title" content="Small Footprint of a power editor in initramfs" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Why bother hussling with blogging on GitHub and put myself in a state where I have to constently struggle with writing and editing? Even at this moment this recurring question lingers in my head. All in all, it’s a combination of multiple factors, numerous instances and mental journeys that happened over the past years; all leading to one question. How do I better controll my own work? To be more specific, do I have a say on the work which I spend time on?" />
-<meta property="og:description" content="Why bother hussling with blogging on GitHub and put myself in a state where I have to constently struggle with writing and editing? Even at this moment this recurring question lingers in my head. All in all, it’s a combination of multiple factors, numerous instances and mental journeys that happened over the past years; all leading to one question. How do I better controll my own work? To be more specific, do I have a say on the work which I spend time on?" />
-<link rel="canonical" href="https://chienpang.github.io/posts/i-dont-have-a-say/" />
-<meta property="og:url" content="https://chienpang.github.io/posts/i-dont-have-a-say/" />
+<meta name="description" content="Have you ever found yourself trapped in a restricted root filesystem where every megabyte has to be weighed? For most people, this is a rarity, but when working with initramfs—the transient filesystem used by the Linux kernel during the boot process—space is everything." />
+<meta property="og:description" content="Have you ever found yourself trapped in a restricted root filesystem where every megabyte has to be weighed? For most people, this is a rarity, but when working with initramfs—the transient filesystem used by the Linux kernel during the boot process—space is everything." />
+<link rel="canonical" href="https://chienpang.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/" />
+<meta property="og:url" content="https://chienpang.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/" />
 <meta property="og:site_name" content="Lee, Chien-Pang" />
-<meta property="og:image" content="https://chienpang.github.io/assets/img/fuenfes_rad.png" />
-<meta property="og:image:alt" content="Fünftes Rad" />
+<meta property="og:image" content="https://chienpang.github.io/assets/img/mg.png" />
+<meta property="og:image:alt" content="mg /lib/x86_64-linux-gnu" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-04-07T04:36:00+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://chienpang.github.io/assets/img/fuenfes_rad.png" />
-<meta name="twitter:image:alt" content="Fünftes Rad" />
-<meta property="twitter:title" content="I don’t have a say" />
+<meta property="twitter:image" content="https://chienpang.github.io/assets/img/mg.png" />
+<meta name="twitter:image:alt" content="mg /lib/x86_64-linux-gnu" />
+<meta property="twitter:title" content="Small Footprint of a power editor in initramfs" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-07T04:36:00+02:00","datePublished":"2026-04-07T04:36:00+02:00","description":"Why bother hussling with blogging on GitHub and put myself in a state where I have to constently struggle with writing and editing? Even at this moment this recurring question lingers in my head. All in all, it’s a combination of multiple factors, numerous instances and mental journeys that happened over the past years; all leading to one question. How do I better controll my own work? To be more specific, do I have a say on the work which I spend time on?","headline":"I don’t have a say","image":{"alt":"Fünftes Rad","url":"https://chienpang.github.io/assets/img/fuenfes_rad.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/i-dont-have-a-say/"},"url":"https://chienpang.github.io/posts/i-dont-have-a-say/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-07T04:36:00+02:00","datePublished":"2026-04-07T04:36:00+02:00","description":"Have you ever found yourself trapped in a restricted root filesystem where every megabyte has to be weighed? For most people, this is a rarity, but when working with initramfs—the transient filesystem used by the Linux kernel during the boot process—space is everything.","headline":"Small Footprint of a power editor in initramfs","image":{"alt":"mg /lib/x86_64-linux-gnu","url":"https://chienpang.github.io/assets/img/mg.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/"},"url":"https://chienpang.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>I don't have a say | Lee, Chien-Pang</title>
+  <title>Small Footprint of a power editor in initramfs | Lee, Chien-Pang</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -211,9 +211,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js,npm/tocbot@4.36.4/dist/tocbot.min.js"></script>
 
 
 
@@ -404,7 +411,7 @@
         
           
             
-              <span>I don't have a say</span>
+              <span>Small Footprint of a power editor in initramfs</span>
             
 
           
@@ -568,6 +575,79 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -586,10 +666,96 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -616,9 +782,9 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>I don't have a say</h1>
+    <h1 data-toc-skip>Small Footprint of a power editor in initramfs</h1>
     
 
     <div class="post-meta text-muted">
@@ -657,7 +823,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="/assets/img/fuenfes_rad.png" class="popup img-link preview-img shimmer"><img src="/assets/img/fuenfes_rad.png"  alt="Fünftes Rad" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Fünftes Rad</figcaption></div>
+          <a href="/assets/img/mg.png" class="popup img-link preview-img shimmer"><img src="/assets/img/mg.png"  alt="mglib/x86_64-linux-gnu" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">mg /lib/x86_64-linux-gnu</figcaption></div>
       
 
       <div class="d-flex justify-content-between">
@@ -699,9 +865,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="314 words"
+  title="858 words"
 >
-  <em>1 min</em> read</span>
+  <em>4 min</em> read</span>
 
         </div>
       </div>
@@ -709,13 +875,226 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Small Footprint of a power editor in initramfs</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Small Footprint of a power editor in initramfs</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
-    <p>Why bother hussling with blogging on GitHub and put myself in a state where I have to constently struggle with writing and editing? Even at this moment this recurring question lingers in my head. All in all, it’s a combination of multiple factors, numerous instances and mental journeys that happened over the past years; all leading to one question. How do I better controll my own work? To be more specific, do I have a say on the work which I spend time on?</p>
+    <p>Have you ever found yourself trapped in a restricted root filesystem where every megabyte has to be weighed? For most people, this is a rarity, but when working with <strong>initramfs</strong>—the transient filesystem used by the Linux kernel during the boot process—space is everything.</p>
 
-<p>I have this personality that I complain about things when I care about them. In a working environment where most people don’t question and challenage the decisions of the organization, my hehavior tends to stand out. Rightfully standing out negatively that this man often rubs it in the wrong way. This is a point I have realized in spite that I made my efforts to be constructive by providing my ideas how thing can be done. On the contrary, I could’ve played along when I posistion myself as a regular employee who gets paid and talk the talk that poeple love hearing. To me, the dilemma is always there. Over two decades of career life has not completely tamed me although I have played on both sides. Finally I have come to a moment being crystally clear that it’s simply not my call. This mental tug of war is not ending unless I figure out a way out myself.</p>
+<p>A text mode editor is a vital tool for navigating filesystem, debugging problems and changing configurations. However, as a dedicated <strong>Emacs</strong> user, the standard lightweight alternatives like <code class="language-plaintext highlighter-rouge">vi</code>, <code class="language-plaintext highlighter-rouge">nano</code>, or <code class="language-plaintext highlighter-rouge">pico</code> is not in the favored list. In such an extreme environment where I from time to time have to handle critical boot issues, a working, light, and powerful editor is to me not just a vital tool but a luxury.</p>
 
-<p>And there we go. My blog and repo on GitHub where I have full control over what needs to be done and how. It doesn’t have to land somewhere; still, it is a project that records my progress, my journey and my work in a way I want. The project is <strong>Fünftes Rad</strong>, the spare tire that’s generally not noticed. It however would play an important roll in the needed moment.</p>
+<h3 id="the-challenge-why-not-emacs-nox"><span class="me-2">The Challenge: Why Not <code class="language-plaintext highlighter-rouge">emacs-nox</code>?</span><a href="#the-challenge-why-not-emacs-nox" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Navigating a filesystem without a proper editor is like living in a read-only world. While <code class="language-plaintext highlighter-rouge">echo</code> redirection and <code class="language-plaintext highlighter-rouge">sed</code> can handle simple tasks, complex configuration changes become a painful exercise in precision.</p>
+
+<p>Normally, I would reach for <code class="language-plaintext highlighter-rouge">emacs-nox</code> (the full Emacs experience without the X11 overhead). But in an initramfs environment, adding <code class="language-plaintext highlighter-rouge">emacs-nox</code> and its dependencies can balloon the image size by over 100MB. For a system that needs to be lean and fast, that’s simply not an option.</p>
+
+<h3 id="the-solution-mg-micro-gnu-emacs"><span class="me-2">The Solution: <code class="language-plaintext highlighter-rouge">mg</code> (Micro GNU Emacs)</span><a href="#the-solution-mg-micro-gnu-emacs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><strong><code class="language-plaintext highlighter-rouge">mg</code></strong> is a microscopic editor that maintains Emacs keybindings while remaining incredibly lightweight. On a standard Ubuntu system, it’s a tiny footprint:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre># apt show mg
+Package: mg
+Version: 20230501-1
+Priority: optional
+Section: universe/editors
+Origin: Ubuntu
+Maintainer: Ubuntu Developers &lt;ubuntu-devel-discuss@lists.ubuntu.com&gt;
+Original-Maintainer: Harald Dunkel &lt;harri@afaics.de&gt;
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 273 kB
+Provides: editor
+Depends: libbsd0 (&gt;= 0.5.0), libc6 (&gt;= 2.38), libtinfo6 (&gt;= 6)
+Homepage: https://homepage.boetes.org/software/mg/
+Download-Size: 121 kB
+APT-Manual-Installed: yes
+APT-Sources: http://mirror.math.princeton.edu/pub/ubuntu noble/universe amd64 Packages
+Description: microscopic GNU Emacs-style editor
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>On a standard Linux operating system like Ubuntu, it is as simple as</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>root@frad:~/Workspace/# # apt-get install mg
+</pre></td></tr></tbody></table></code></div></div>
+<p>Nonetheless, we are dealing with a mimimized distroless rootfilesystem that doen’t come with package managers of any sort. To get mg to work inside mini rootfs, assuming you’re on a Ubuntu, install mg with the above. After installation, the binary can be located with</p>
+
+<p>All that is still on host system. To get mg working in initramfs, we have to perform a manual port.</p>
+
+<h2 id="step-1-binary-placement"><span class="me-2">Step 1: Binary Placement</span><a href="#step-1-binary-placement" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>First, we locate the binary on the host and copy it into our target initramfs directory:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>root@frad:~/Workspace/# # which mg
+/usr/bin/mg
+root@frad:~/Workspace/# install -p -D -m 0755 /usr/bin/mg ~/my-initramfs/bin/mg
+</pre></td></tr></tbody></table></code></div></div>
+<p>Let take a peek how it’d work inside the rootfs</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>root@frad:~/Workspace/# chroot ~/Workspace/img/mini_initramfs
+/ # echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+/ # mg
+/bin/sh: mg: not found
+/ # ls -lt /bin/mg
+-rwxr-xr-x    1 0        0           231080 Apr 20 06:48 /bin/mg
+/ #
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Invoking md command inside the mini initramfs came back with an error that “mg” was not found. Further commands confirmed that the binary was there and path was also correct. The installed mg turned out to be a dynamically-linked binary so the shared libraries also need to be copied.</p>
+
+<h2 id="step-2-resolving-dependencies"><span class="me-2">Step 2: Resolving Dependencies</span><a href="#step-2-resolving-dependencies" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>To fix this, we use ldd to identify the shared library dependencies:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>root@frad:~/Workspace/# ldd /usr/bin/mg
+    libtinfo.so.6 =&gt; /lib/x86_64-linux-gnu/libtinfo.so.6
+    libbsd.so.0 =&gt; /lib/x86_64-linux-gnu/libbsd.so.0
+    libc.so.6 =&gt; /lib/x86_64-linux-gnu/libc.so.6
+    /lib64/ld-linux-x86-64.so.2
+</pre></td></tr></tbody></table></code></div></div>
+<p>We must replicate this structure inside our initramfs:</p>
+<h1 id="create-directory-structure-and-symlinks">Create directory structure and symlinks</h1>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>root@frad:~/Workspace/# /root/Workspace/img/mini_initramfs/usr/lib/x86_64-linux-gnu
+root@frad:~/Workspace/# ln -sf usr/lib /root/Workspace/img/mini_initramfs/lib
+root@frad:~/Workspace/# ln -sf ../lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 /root/Workspace/img/mini_initramfs/lib64/
+root@frad:~/Workspace/# ldd /usr/bin/mg | grep "=&gt;" | awk '{print $3}' | xargs -i cp {} /root/Workspace/img/mini_initramfs{}
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="step-3-solving-the-terminal-panic"><span class="me-2">Step 3: Solving the “Terminal Panic”</span><a href="#step-3-solving-the-terminal-panic" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>After this, give it another try!</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>root@frad:~/Workspace/frad_# chroot ~/Workspace/frad_/img/frad_mini_initramfs
+/ # mg
+panic: Terminal setup failed
+/ # echo $TERM
+xterm
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>mg was launched with previous errors gone. But there appeared to be a new error about terminal panic. The terminal is “xterm”. With some more digging it pointed to missing data/db of xterm capabilities. As such, I copied xterm pertinent data into rootfs
+```/bin/bash /root/Workspace/frad/scripts/install /root/Workspace/frad_/img/frad_mini_initramfs /usr/share/terminfo/x/xterm usr/share/terminfo/x</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="rouge-code"><pre>root@frad:~/Workspace/frad_# chroot ~/Workspace/frad_/img/frad_mini_initramfs
+/ # ls -lt /usr/share/terminfo/x/
+total 4
+-rw-r--r--    1 0        0             3991 Apr  8  2024 xterm
+/ # mg
+/ #
+/ # ls -lt /lib/x86_64-linux-gnu/ /lib64
+lrwxrwxrwx    1 0        0                9 Apr 20 08:19 /lib64 -&gt; usr/lib64
+
+/lib/x86_64-linux-gnu/:
+total 2652
+-rwxr-xr-x    1 0        0           236616 Apr 20 08:19 ld-linux-x86-64.so.2
+-rwxr-xr-x    1 0        0             3632 Apr 20 08:19 ld-linux-x86-64.so.2.debug
+-rw-r--r--    1 0        0            80888 Apr 20 08:19 libbsd.so.0
+-rwxr-xr-x    1 0        0          2125328 Apr 20 08:19 libc.so.6
+-rw-r--r--    1 0        0            55536 Apr 20 08:19 libmd.so.0
+-rw-r--r--    1 0        0           208328 Apr 20 08:19 libtinfo.so.6
+/ # du -hsc /lib/x86_64-linux-gnu/ /lib64 /bin/mg
+2.6M	/lib/x86_64-linux-gnu/
+0	/lib64
+228.0K	/bin/mg
+2.8M	total
+/ # mg /lib/x86_64-linux-gnu/
+/ #
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="the-result"><span class="me-2">The Result</span><a href="#the-result" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>And there we go: a functional, Emacs-style editor with small footprint (2.8M in total) in a distroless, customized and size-critical filesystem. I’d play a mission-critical role when it comes to future trouble-shooting during bootstrapping, expecially when kernel panics.</p>
+
+<p><a href="/assets/img/mg.png" class="popup img-link shimmer"><img src="/assets/img/mg.png" alt="mglib/x86_64-linux-gnu" title="mglib/x86_64-linux-gnu" loading="lazy"></a></p>
 
   </div>
 
@@ -735,9 +1114,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/minds/"
+            href="/tags/initramfs/"
             class="post-tag no-text-decoration"
-          >minds</a>
+          >initramfs</a>
         
       </div>
     
@@ -773,21 +1152,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=I%20don't%20have%20a%20say%20-%20Lee,%20Chien-Pang&url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fi-dont-have-a-say%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Small%20Footprint%20of%20a%20power%20editor%20in%20initramfs%20-%20Lee,%20Chien-Pang&url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fsmall-footprint-of-a-power-editor-in-initramfs%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=I%20don't%20have%20a%20say%20-%20Lee,%20Chien-Pang&u=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fi-dont-have-a-say%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Small%20Footprint%20of%20a%20power%20editor%20in%20initramfs%20-%20Lee,%20Chien-Pang&u=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fsmall-footprint-of-a-power-editor-in-initramfs%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fi-dont-have-a-say%2F&text=I%20don't%20have%20a%20say%20-%20Lee,%20Chien-Pang" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fsmall-footprint-of-a-power-editor-in-initramfs%2F&text=Small%20Footprint%20of%20a%20power%20editor%20in%20initramfs%20-%20Lee,%20Chien-Pang" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -925,6 +1304,12 @@
 
 
 
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
 
             
           </aside>
@@ -962,19 +1347,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -990,7 +1375,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/small-footprint-of-a-power-editor-in-initramfs/" class="post-preview card h-100">
+          <a href="/posts/i-dont-have-a-say/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1009,9 +1394,9 @@
   Apr  7, 2026
 </time>
 
-              <h4 class="pt-0 my-2">Small Footprint of a power editor in initramfs</h4>
+              <h4 class="pt-0 my-2">I don't have a say</h4>
               <div class="text-muted">
-                <p>Have you ever found yourself trapped in a restricted root filesystem where every megabyte has to be weighed? For most people, this is a rarity, but when working with initramfs—the transient filesys...</p>
+                <p>Why bother hussling with blogging on GitHub and put myself in a state where I have to constently struggle with writing and editing? Even at this moment this recurring question lingers in my head. A...</p>
               </div>
             </div>
           </a>
@@ -1031,19 +1416,19 @@
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Older">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/i-dont-have-a-say/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>I don't have a say</p>
+    </a>
   
 
   
-    <a
-      href="/posts/small-footprint-of-a-power-editor-in-initramfs/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Small Footprint of a power editor in initramfs</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
