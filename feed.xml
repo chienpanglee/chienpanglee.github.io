@@ -4,7 +4,7 @@
   <id>https://chienpang.github.io/</id>
   <title>Lee, Chien-Pang</title>
   <subtitle>Free style blogging about my day to day problem-solving tasks, most likely in IT areas.</subtitle>
-  <updated>2026-05-11T08:08:46+02:00</updated>
+  <updated>2026-05-11T09:40:25+02:00</updated>
   <author>
     <name>Lee, Chien-Pang</name>
     <uri>https://chienpang.github.io/</uri>
@@ -38,7 +38,7 @@
     
   
 
-  <summary>Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a concious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung.    I have a...</summary>
+  <summary>Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a conscious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung.    I have ...</summary>
 
   </entry>
 

@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Jenkins nodes are offline" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a concious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung." />
-<meta name="twitter:description" property="og:description" content="Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a concious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung." />
+<meta name="description" content="Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a conscious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung." />
+<meta name="twitter:description" property="og:description" content="Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a conscious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung." />
 <link rel="canonical" href="https://chienpang.github.io/posts/jenkins-node-are-offline/" />
 <meta property="og:url" content="https://chienpang.github.io/posts/jenkins-node-are-offline/" />
 <meta property="og:site_name" content="Lee, Chien-Pang" />
@@ -48,7 +48,7 @@
 <meta name="twitter:title" content="Jenkins nodes are offline" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-04T08:00:00+02:00","datePublished":"2026-05-04T08:00:00+02:00","description":"Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a concious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung.","headline":"Jenkins nodes are offline","image":{"alt":"All nodes of label ‘xxx’ are offline","url":"https://chienpang.github.io/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_say.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/jenkins-node-are-offline/"},"url":"https://chienpang.github.io/posts/jenkins-node-are-offline/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-04T08:00:00+02:00","datePublished":"2026-05-04T08:00:00+02:00","description":"Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a conscious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung.","headline":"Jenkins nodes are offline","image":{"alt":"All nodes of label ‘xxx’ are offline","url":"https://chienpang.github.io/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_say.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/jenkins-node-are-offline/"},"url":"https://chienpang.github.io/posts/jenkins-node-are-offline/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1150,7 +1150,7 @@
   
 
   <div class="content">
-    <p>Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a concious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung.</p>
+    <p>Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a conscious decision of moving Jenkins service (the Jenkins master) to a new server which was new on pretty much every aspect, including OS. When all power was resumed and CI jobs kicked off, they hung.</p>
 
 <p><a href="/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_job.png" class="popup img-link shimmer"><img src="/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_job.png" alt="Job hangs" title="Job hangs" loading="lazy"></a></p>
 
@@ -1167,7 +1167,7 @@ All nodes of label ‘bldsrv_private_200.13_centos9￼’ are offline
 <p>As I looked into the status of the mentioned node of that label, I ran into numerous unsuccessful executions:
 <a href="/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_nodes_label.png" class="popup img-link shimmer"><img src="/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_nodes_label.png" alt="All nodes of label ‘bldsrv_private_200.13_centos9’ are offline" title="All nodes of label ‘bldsrv_private_200.13_centos9’ are offline" loading="lazy"></a></p>
 
-<p>Clicking one of the failed executions gave me further infomation:
+<p>Clicking one of the failed executions gave me further information:
 <a href="/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_agent.png" class="popup img-link shimmer"><img src="/assets/img/2026-05-04-jenkins-node-are-offline/jenkins_agent.png" alt="Jenkins Agent" title="Jenkins Agent" loading="lazy"></a></p>
 
 <p>The error of executing agent indicated something wrong with the docker container.</p>
@@ -1177,7 +1177,7 @@ All nodes of label ‘bldsrv_private_200.13_centos9￼’ are offline
 </pre></td><td class="rouge-code"><pre>Docker Agent [localhost:5000/centos9-jail:latest on tcp://10.32.200.13:4243 ID 7076e0254ff86c26e7d9c6a8b3762fff5d6ae11401d96349e358570234942068]
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Indeed we do use Docker Clouds. The configurations were double-checked as mentioned in previous post<a href="https://chienpanglee.github.io/posts/jenkins-ci-unseen-building-bricks-of-parallelization/">Jenkins CI the unseen building bricks of parallelization</a></p>
+<p>Indeed we do use Docker Clouds. The configurations were double-checked as mentioned in previous post <a href="https://chienpanglee.github.io/posts/jenkins-ci-unseen-building-bricks-of-parallelization/">Jenkins CI the unseen building bricks of parallelization</a>.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -1543,7 +1543,7 @@ OpenJDK 64-Bit Server VM Temurin-21.0.10+7 (build 21.0.10+7-LTS, mixed mode)
   </tbody>
 </table></div>
 
-<p>And here is the culprit, the Java version of latest Jenkins image on https://hub.docker.com/r/jenkins/jenkins is 2.555.1, exacly what we have currently. However, the <strong>Java version 21</strong> of Jenkins master does not match that of our agent (jail image <strong>Java version 17</strong>). See below in our worker nodes.</p>
+<p>And here is the culprit, the Java version of latest Jenkins image on https://hub.docker.com/r/jenkins/jenkins is 2.555.1, exactly what we have currently. However, the <strong>Java version 21</strong> of Jenkins master does not match that of our agent (jail image <strong>Java version 17</strong>). See below in our worker nodes.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -1557,7 +1557,7 @@ OpenJDK Runtime Environment (Red_Hat-17.0.18.0.8-2) (build 17.0.18+8-LTS)
 OpenJDK 64-Bit Server VM (Red_Hat-17.0.18.0.8-2) (build 17.0.18+8-LTS, mixed mode, sharing)
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>As the cause becomes clear so is the fix. Either keeping lowering the Java version in jail or bumping it up in the Docker image launched by Jenkins Clouds. For the develop wheel to move forward, the later is more favoriable.</p>
+<p>As the cause becomes clear so is the fix. Either keeping lowering the Java version in jail or bumping it up in the Docker image launched by Jenkins Clouds. For the develop wheel to move forward, the later is preferred.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
