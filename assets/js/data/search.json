@@ -1,6 +1,15 @@
 [
   
   {
+    "title": "Jenkins pipeline with git-lfs",
+    "url": "/posts/jenkins-pipeline-with-git-lfs/",
+    "categories": "Tech",
+    "tags": "CI/CD",
+    "date": "2026-05-15 10:00:00 +0200",
+    "content": "Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin     Jenkins -&gt; Job -&gt; Pipeline Syntax -&gt; Snippet Generator    copy &amp; paste it into your pipeline script     checkout([  $class: 'GitSCM',   branches: [[name: '*/develop']],   extensions: [      [$class: 'GitLFSPull'] // This ensures LFS binaries are pulled  ],   userRemoteConfigs: [[url: 'https://github.com/bigstack-oss/cubecos.git']] ])          In a simple use case things work perfectly. It’s also true when I change url to ssh + credential. On top of these, adding submodules also works. All is good until LFS shows up. After enough trial and error I have got a combo that works on some nodes; however not all.     checkout([  $class: 'GitSCM',  branches: [      [name: \"${GIT_BRANCH_NAME}\"]  ],  browser: github('https://github.com/bigstack-oss/'),  extensions: [      [$class: 'GitLFSPull'],      [          $class: 'RelativeTargetDirectory',           relativeTargetDir: \"${PROJ_NAME}\"      ],      [          $class: 'SubmoduleOption',          disableSubmodules: false,          parentCredentials: true,          recursiveSubmodules: true,          reference: '',          trackingSubmodules: false      ]  ],  submoduleCfg: [],  userRemoteConfigs: [      [          credentialsId: 'repo-privkey',          url: 'git@github.com:bigstack-oss/cubecos.git'      ]  ] ])          The whole debug journey is even now a big mess that I can barely keep all details straight. Nonetheless, I have come to a point and realize that relying on the Jenkins git plugin alone is not robust enough to handle git-lfs. Additional bash scripts are involved to get the job done. Below is a working version for me that functions on all nodes (of different OSes)              dir(\"${SRCPTH}\") {              checkout scmGit(                  branches: [[name: \"${GIT_BRANCH_NAME}\"]],                  userRemoteConfigs: [[                      url: 'https://github.com/bigstack-oss/cubecos.git'                  ]]              )              sh '''  # 1. Standard LFS init  git config --unset core.hooksPath || true  git lfs install --local   # 2. Update submodules first  git config submodule.hex.url https://github.com/bigstack-oss/hex.git  git submodule update --init --recursive   # 3. Pull LFS objects for the root repo AND all submodules  # This command pulls LFS objects for everything defined in the index  git lfs fetch --all  git lfs checkout   # 4. Specifically ensure submodules have their LFS objects checked out  git submodule foreach 'git lfs install --local &amp;&amp; git lfs pull' '''          }"
+  },
+  
+  {
     "title": "Copying fail",
     "url": "/posts/copying-fail/",
     "categories": "Tech",
