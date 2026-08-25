@@ -11,16 +11,13 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" data-mode="light | dark">
+<html
+  lang="en">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
@@ -38,13 +35,13 @@
 <meta property="og:url" content="https://chienpang.github.io/tags/" />
 <meta property="og:site_name" content="Lee, Chien-Pang" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-05-15T10:44:11+02:00" />
-<meta property="article:modified_time" content="2026-05-15T10:44:11+02:00" />
+<meta property="article:published_time" content="2026-08-25T09:19:56+02:00" />
+<meta property="article:modified_time" content="2026-08-25T09:19:56+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Tags" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-15T10:44:11+02:00","datePublished":"2026-05-15T10:44:11+02:00","description":"Free style blogging about my day to day problem-solving tasks, most likely in IT areas.","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/tags/"},"url":"https://chienpang.github.io/tags/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-08-25T09:19:56+02:00","datePublished":"2026-08-25T09:19:56+02:00","description":"Free style blogging about my day to day problem-solving tasks, most likely in IT areas.","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/tags/"},"url":"https://chienpang.github.io/tags/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -91,7 +88,7 @@
 
   <!-- Bootstrap -->
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
   
 
   <!-- Theme style -->
@@ -101,7 +98,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css">
 
   <!-- 3rd-party Dependencies -->
 
@@ -147,7 +144,7 @@
 
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1/dest/simple-jekyll-search.min.js"></script>
 
 
 
@@ -236,7 +233,31 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    <div class="btn-group dropup">
+        <button
+          type="button"
+          class="btn btn-link nav-link"
+          aria-label="Switch Mode"
+          id="mode-toggle"
+          data-bs-toggle="dropdown"
+        ><i class="fa-regular fa-sun" data-theme-mode="light"></i><i class="fa-regular fa-moon" data-theme-mode="dark"></i><i class="fa-solid fa-display" data-theme-mode="system"></i></button>
+        <ul class="dropdown-menu rounded-3 mb-1 p-1">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light"><i class="fa-regular fa-sun" data-theme-mode="light"></i>Light</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark"><i class="fa-regular fa-moon" data-theme-mode="dark"></i>Dark</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system"><i class="fa-solid fa-display" data-theme-mode="system"></i>System</button>
+          </li>
+        </ul>
+      </div>
+
+      
+        <span class="icon-border"></span>
+      
     
 
     
@@ -265,7 +286,7 @@
 
       
         <a
-          href="javascript:location.href = 'mailto:' + ['lee.chienpang','gmail.com'].join('@')"
+          href="javascript:void(location.href = 'mailto:' + ['lee.chienpang','gmail.com'].join('@'))"
           aria-label="email"
           
 
@@ -405,7 +426,7 @@
   
     <div>
       <a class="tag" href="/tags/security/">
-        Security<span class="text-muted">1</span>
+        Security<span class="text-muted">2</span>
       </a>
     </div>
   
@@ -444,6 +465,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/Dont-want-to-miss-a-ball-with-OpenCVE/">Don't Want to Miss a Ball with OpenCVE</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/jenkins-pipeline-with-git-lfs/">Jenkins pipeline with git-lfs</a>
         </li>
       
@@ -466,13 +494,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/jenkins-ci-unseen-building-bricks-of-parallelization/">Jenkins CI the unseen building bricks of parallelization</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/i-dont-have-a-say/">I don't have a say</a>
         </li>
       
     </ul>
@@ -515,6 +536,11 @@
     
     
     
+  
+    
+    
+    
+    
       
         
         
@@ -523,13 +549,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -550,10 +569,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/ci-cd/">CI/CD</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
       
     </div>
   </section>
@@ -598,7 +617,7 @@
   <p>Using the <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.5.0"
+        title="v7.6.0"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -649,6 +668,11 @@
     
     
     
+  
+    
+    
+    
+    
       
         
         
@@ -657,13 +681,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -684,10 +701,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/ci-cd/">CI/CD</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
       
     </div>
   </section>
@@ -712,26 +729,26 @@
     
       <aside
   id="notification"
-  class="toast"
+  class="toast w-auto rounded-5 text-nowrap"
   role="alert"
   aria-live="assertive"
   aria-atomic="true"
   data-bs-animation="true"
   data-bs-autohide="false"
 >
-  <div class="toast-header">
+  <div class="d-flex align-items-center">
+    <div class="toast-body ps-3">New content available</div>
     <button
       type="button"
-      class="btn-close ms-auto"
+      class="btn btn-primary btn-sm rounded-2 py-0"
+      aria-label="Update"
+    >Update</button>
+    <button
+      type="button"
+      class="btn-close mx-3 ms-2"
       data-bs-dismiss="toast"
       aria-label="Close"
     ></button>
-  </div>
-  <div class="toast-body text-center pt-0">
-    <p class="px-2 mb-3">A new version of content is available.</p>
-    <button type="button" class="btn btn-primary" aria-label="Update">
-      Update
-    </button>
   </div>
 </aside>
 

@@ -4,7 +4,7 @@
   <id>https://chienpang.github.io/</id>
   <title>Lee, Chien-Pang</title>
   <subtitle>Free style blogging about my day to day problem-solving tasks, most likely in IT areas.</subtitle>
-  <updated>2026-05-15T10:44:11+02:00</updated>
+  <updated>2026-08-25T09:19:56+02:00</updated>
   <author>
     <name>Lee, Chien-Pang</name>
     <uri>https://chienpang.github.io/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Don't Want to Miss a Ball with OpenCVE</title>
+    <link href="https://chienpang.github.io/posts/Dont-want-to-miss-a-ball-with-OpenCVE/" rel="alternate" type="text/html" title="Don&amp;apos;t Want to Miss a Ball with OpenCVE" />
+    <published>2026-08-24T10:00:00+02:00</published>
+  
+    <updated>2026-08-24T10:00:00+02:00</updated>
+  
+    <id>https://chienpang.github.io/posts/Dont-want-to-miss-a-ball-with-OpenCVE/</id>
+    <content type="text/html" src="https://chienpang.github.io/posts/Dont-want-to-miss-a-ball-with-OpenCVE/" />
+    <author>
+      <name>Lee, Chien-Pang</name>
+    </author>
+
+  
+    
+    <category term="Tech" />
+    
+  
+
+  <summary>A new Slack channel was created — the “Security” channel — meant to cover all sorts of security topics: CVEs, hacker news, disclosures with a high CVSS score, and so on. Team members started feeding the channel with whatever they’d learned, whether from personal subscriptions, RSS feeds, or just stumbling across it in the news; customer feedback played a role too. Over time, I couldn’t help but...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>One of my Jenkins pipelines was set up and, without further scrutiny, it just worked. It ran multiple stages that took several hours and eventually ended in green — the kind of result that contributes to a bright, sunny day. Though it was just past lunchtime, I cracked open a bottle of Gösser and called it a day.  These small rewards in the middle of routine work feel deserved, especially when ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Small footprint of a power editor in initramfs</title>
-    <link href="https://chienpang.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/" rel="alternate" type="text/html" title="Small footprint of a power editor in initramfs" />
-    <published>2026-04-07T04:36:00+02:00</published>
-  
-    <updated>2026-04-07T04:36:00+02:00</updated>
-  
-    <id>https://chienpang.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/</id>
-    <content type="text/html" src="https://chienpang.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/" />
-    <author>
-      <name>Lee, Chien-Pang</name>
-    </author>
-
-  
-    
-    <category term="Tech" />
-    
-  
-
-  <summary>Have you ever found yourself trapped in a restricted root filesystem where every megabyte has to be weighed? For most people, this is a rarity, but when working with initramfs—the transient filesystem used by the Linux kernel during the boot process—space is everything.  A text mode editor is a vital tool for navigating filesystem, debugging problems and changing configurations. However, as a d...</summary>
 
   </entry>
 
