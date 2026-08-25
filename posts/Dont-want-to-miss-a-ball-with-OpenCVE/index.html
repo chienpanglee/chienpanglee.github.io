@@ -1159,7 +1159,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="4363 words"
+  title="4361 words"
 >
   <em>24 min</em> read</span>
 
@@ -1560,7 +1560,7 @@
 		<span class="nt">-e</span> <span class="nv">OPENCVE_SUBSCRIBE_PROJECT</span><span class="o">=</span><span class="p">$(</span>OPENCVE_PROJECT_NAME<span class="p">)</span> <span class="se">\</span>
 		webserver python manage.py shell &lt; <span class="p">$(</span>OPENCVE_MK_DIR<span class="p">)</span>opencve_unsubscribe_all.py
 
-<span class="c"># Reads a Syft/Grype vuln.json report (e.g. .../ship/CUBE_*_vuln.json) and
+<span class="c"># Reads a Syft/Grype vuln.json report and
 # lists every finding of one severity level (CVE/GHSA/GO id, fix state,
 # affected package(s)). As a side effect, caches the CVE -&gt; package-names
 # mapping to a temp file so opencve-subscribe can reuse it without
