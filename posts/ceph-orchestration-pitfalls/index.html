@@ -25,7 +25,7 @@
 
   
 
-  <!-- Begin Jekyll SEO tag v2.9.0 -->
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Ceph Orchestration Pitfalls" />
 <meta property="og:locale" content="en" />
@@ -1539,6 +1539,13 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/ceph-air-gapped-part-2-the-registry/">Ceph Air-Gapped, Part 2: The Registry I Said I Didn't Need</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/ceph-orchestration-pitfalls/">Ceph Orchestration Pitfalls</a>
         </li>
       
@@ -1561,13 +1568,6 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
         
         <li class="text-truncate lh-lg">
           <a href="/posts/copying-fail/">Copying fail</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/jenkins-node-are-offline/">Jenkins nodes are offline</a>
         </li>
       
     </ul>
@@ -1629,22 +1629,22 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1672,10 +1672,10 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
       
     </div>
   </section>
@@ -1802,6 +1802,18 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1815,6 +1827,34 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/ceph-air-gapped-part-2-the-registry/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1792656000"
+  data-df="ll"
+  
+>
+  Oct 22, 2026
+</time>
+
+              <h4 class="pt-0 my-2">Ceph Air-Gapped, Part 2: The Registry I Said I Didn't Need</h4>
+              <div class="text-muted">
+                <p>In my last post I spent days finding out why cephadm silently stalled in an air-gapped network, and the answer was two settings: point container_image at the image podman already had, and tell ceph...</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/Dont-want-to-miss-a-ball-with-OpenCVE/" class="post-preview card h-100">
@@ -1872,34 +1912,6 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
           </a>
         </article>
       
-        <article class="col">
-          <a href="/posts/copying-fail/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/modules/components/locale-datetime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1778594400"
-  data-df="ll"
-  
->
-  May 12, 2026
-</time>
-
-              <h4 class="pt-0 my-2">Copying fail</h4>
-              <div class="text-muted">
-                <p>Copy Fail (CVE-2026-31431) has started a fierce fire that’s gone rampant in the Linux woods. Are we exploitable? The answer is almost certain because pretty much every actively maintained enterpris...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1924,9 +1936,13 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/ceph-air-gapped-part-2-the-registry/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Ceph Air-Gapped, Part 2: The Registry I Said I Didn't Need</p>
+    </a>
   
 </nav>
 
@@ -2030,22 +2046,22 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2073,10 +2089,10 @@ ceph auth get-or-create client.bootstrap-osd mon 'allow profile bootstrap-osd' -
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
       
     </div>
   </section>

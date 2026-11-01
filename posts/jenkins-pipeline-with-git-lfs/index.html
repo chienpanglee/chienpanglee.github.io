@@ -25,7 +25,7 @@
 
   
 
-  <!-- Begin Jekyll SEO tag v2.9.0 -->
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Jenkins pipeline with git-lfs" />
 <meta property="og:locale" content="en" />
@@ -45,7 +45,7 @@
 <meta name="twitter:title" content="Jenkins pipeline with git-lfs" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-15T10:00:00+02:00","datePublished":"2026-05-15T10:00:00+02:00","description":"Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin Jenkins -&gt; Job -&gt; Pipeline Syntax -&gt; Snippet Generator copy &amp; paste it into your pipeline script 1 2 3 4 5 6 7 8 checkout([ $class: &#39;GitSCM&#39;, branches: [[name: &#39;*/develop&#39;]], extensions: [ [$class: &#39;GitLFSPull&#39;] // This ensures LFS binaries are pulled ], userRemoteConfigs: [[url: &#39;https://github.com/bigstack-oss/cubecos.git&#39;]] ]) In a simple use case things work perfectly. It’s also true when I change url to ssh + credential. On top of these, adding submodules also works.…","headline":"Jenkins pipeline with git-lfs","image":{"alt":"checkout source","url":"https://chienpang.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/"},"url":"https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-15T10:00:00+02:00","datePublished":"2026-05-15T10:00:00+02:00","description":"Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin Jenkins -\u0026gt; Job -\u0026gt; Pipeline Syntax -\u0026gt; Snippet Generator copy \u0026amp; paste it into your pipeline script 1 2 3 4 5 6 7 8 checkout([ $class: \u0026#39;GitSCM\u0026#39;, branches: [[name: \u0026#39;*/develop\u0026#39;]], extensions: [ [$class: \u0026#39;GitLFSPull\u0026#39;] // This ensures LFS binaries are pulled ], userRemoteConfigs: [[url: \u0026#39;https://github.com/bigstack-oss/cubecos.git\u0026#39;]] ]) In a simple use case things work perfectly. It’s also true when I change url to ssh + credential. On top of these, adding submodules also works.…","headline":"Jenkins pipeline with git-lfs","image":{"alt":"checkout source","url":"https://chienpang.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/"},"url":"https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1237,6 +1237,13 @@ Below is a working version for me that functions on all nodes (of different OSes
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/ceph-air-gapped-part-2-the-registry/">Ceph Air-Gapped, Part 2: The Registry I Said I Didn't Need</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/ceph-orchestration-pitfalls/">Ceph Orchestration Pitfalls</a>
         </li>
       
@@ -1259,13 +1266,6 @@ Below is a working version for me that functions on all nodes (of different OSes
         
         <li class="text-truncate lh-lg">
           <a href="/posts/copying-fail/">Copying fail</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/jenkins-node-are-offline/">Jenkins nodes are offline</a>
         </li>
       
     </ul>
@@ -1327,22 +1327,22 @@ Below is a working version for me that functions on all nodes (of different OSes
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1370,10 +1370,10 @@ Below is a working version for me that functions on all nodes (of different OSes
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
       
     </div>
   </section>
@@ -1476,6 +1476,18 @@ Below is a working version for me that functions on all nodes (of different OSes
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1732,22 +1744,22 @@ Below is a working version for me that functions on all nodes (of different OSes
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1775,10 +1787,10 @@ Below is a working version for me that functions on all nodes (of different OSes
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">Security</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
       
     </div>
   </section>
