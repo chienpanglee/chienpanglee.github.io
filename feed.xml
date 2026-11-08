@@ -4,7 +4,7 @@
   <id>https://chienpang.github.io/</id>
   <title>Lee, Chien-Pang</title>
   <subtitle>Free style blogging about my day to day problem-solving tasks, most likely in IT areas.</subtitle>
-  <updated>2026-11-01T11:42:35+01:00</updated>
+  <updated>2026-11-08T18:06:33+01:00</updated>
   <author>
     <name>Lee, Chien-Pang</name>
     <uri>https://chienpang.github.io/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Have you got the time, Ceph?</title>
+    <link href="https://chienpang.github.io/posts/have-you-got-the-time-ceph/" rel="alternate" type="text/html" title="Have you got the time, Ceph?" />
+    <published>2026-11-08T03:00:00+01:00</published>
+  
+    <updated>2026-11-08T03:00:00+01:00</updated>
+  
+    <id>https://chienpang.github.io/posts/have-you-got-the-time-ceph/</id>
+    <content type="text/html" src="https://chienpang.github.io/posts/have-you-got-the-time-ceph/" />
+    <author>
+      <name>Lee, Chien-Pang</name>
+    </author>
+
+  
+    
+    <category term="Tech" />
+    
+  
+
+  <summary>Have you got the time, Ceph? Ceph’s monitors refuse to work with a clock more than 0.05 s off (mon_clock_drift_allowed), and my own health check on the appliance flags a node past 10 s. So a node that is two minutes off is a node out of the cluster. At first glance this sounds like a corner case, but it has happened to me all the time since I enhanced my testing framework with RAM snapshots tha...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin     Jenkins -&amp;gt; Job -&amp;gt; Pipeline Syntax -&amp;gt; Snippet Generator    copy &amp;amp; paste it into your pipeline script     checkout([  $class: 'GitSCM',   branches: [[name: '*/develop']],   extensions: [      [$class: 'GitLFSPull'] // This ensures LFS b...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Copying fail</title>
-    <link href="https://chienpang.github.io/posts/copying-fail/" rel="alternate" type="text/html" title="Copying fail" />
-    <published>2026-05-12T16:00:00+02:00</published>
-  
-    <updated>2026-05-12T16:00:00+02:00</updated>
-  
-    <id>https://chienpang.github.io/posts/copying-fail/</id>
-    <content type="text/html" src="https://chienpang.github.io/posts/copying-fail/" />
-    <author>
-      <name>Lee, Chien-Pang</name>
-    </author>
-
-  
-    
-    <category term="Tech" />
-    
-  
-
-  <summary>Copy Fail (CVE-2026-31431) has started a fierce fire that’s gone rampant in the Linux woods. Are we exploitable? The answer is almost certain because pretty much every actively maintained enterprise distribution has it. While folks are anxiously looking for a way to put it out, Dirty Frag and Copy Fail 2: Electric Boogaloo have caught up to the game, spilling oil on the flame. The correct way t...</summary>
 
   </entry>
 
