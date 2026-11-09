@@ -31,21 +31,21 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="In my last post I spent days finding out why cephadm silently stalled in an air-gapped network, and the answer was two settings: point container_image at the image podman already had, and tell cephadm not to resolve tags into repo digests. An additional step that I adopted was that I did not run a registry. The Ceph image was copied with skopeo into an archive, shipped with the release, podman loaded on every node, and that was it. No extra service to keep alive, no credentials, nothing listening. The hassle of spinning up a private registry, pushing it in and…" />
 <meta name="twitter:description" property="og:description" content="In my last post I spent days finding out why cephadm silently stalled in an air-gapped network, and the answer was two settings: point container_image at the image podman already had, and tell cephadm not to resolve tags into repo digests. An additional step that I adopted was that I did not run a registry. The Ceph image was copied with skopeo into an archive, shipped with the release, podman loaded on every node, and that was it. No extra service to keep alive, no credentials, nothing listening. The hassle of spinning up a private registry, pushing it in and…" />
-<link rel="canonical" href="https://chienpang.github.io/posts/ceph-air-gapped-part-2-the-registry/" />
-<meta property="og:url" content="https://chienpang.github.io/posts/ceph-air-gapped-part-2-the-registry/" />
+<link rel="canonical" href="https://chienpanglee.github.io/posts/ceph-air-gapped-part-2-the-registry/" />
+<meta property="og:url" content="https://chienpanglee.github.io/posts/ceph-air-gapped-part-2-the-registry/" />
 <meta property="og:site_name" content="Lee, Chien-Pang" />
-<meta property="og:image" content="https://chienpang.github.io/assets/img/2026-10-22-ceph-air-gapped-part-2-the-registry/cover.png" />
+<meta property="og:image" content="https://chienpanglee.github.io/assets/img/2026-10-22-ceph-air-gapped-part-2-the-registry/cover.png" />
 <meta property="og:image:alt" content="A healthy Ceph cluster and a red upgrade error from quay.io on the dashboard" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-10-22T10:00:00+02:00" />
 <meta property="article:modified_time" content="2026-10-22T10:00:00+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://chienpang.github.io/assets/img/2026-10-22-ceph-air-gapped-part-2-the-registry/cover.png" />
+<meta name="twitter:image" content="https://chienpanglee.github.io/assets/img/2026-10-22-ceph-air-gapped-part-2-the-registry/cover.png" />
 <meta name="twitter:image:alt" content="A healthy Ceph cluster and a red upgrade error from quay.io on the dashboard" />
 <meta name="twitter:title" content="Ceph Air-Gapped, Part 2: The Registry I Said I Didn’t Need" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-10-22T10:00:00+02:00","datePublished":"2026-10-22T10:00:00+02:00","description":"In my last post I spent days finding out why cephadm silently stalled in an air-gapped network, and the answer was two settings: point container_image at the image podman already had, and tell cephadm not to resolve tags into repo digests. An additional step that I adopted was that I did not run a registry. The Ceph image was copied with skopeo into an archive, shipped with the release, podman loaded on every node, and that was it. No extra service to keep alive, no credentials, nothing listening. The hassle of spinning up a private registry, pushing it in and…","headline":"Ceph Air-Gapped, Part 2: The Registry I Said I Didn’t Need","image":{"alt":"A healthy Ceph cluster and a red upgrade error from quay.io on the dashboard","url":"https://chienpang.github.io/assets/img/2026-10-22-ceph-air-gapped-part-2-the-registry/cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/ceph-air-gapped-part-2-the-registry/"},"url":"https://chienpang.github.io/posts/ceph-air-gapped-part-2-the-registry/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-10-22T10:00:00+02:00","datePublished":"2026-10-22T10:00:00+02:00","description":"In my last post I spent days finding out why cephadm silently stalled in an air-gapped network, and the answer was two settings: point container_image at the image podman already had, and tell cephadm not to resolve tags into repo digests. An additional step that I adopted was that I did not run a registry. The Ceph image was copied with skopeo into an archive, shipped with the release, podman loaded on every node, and that was it. No extra service to keep alive, no credentials, nothing listening. The hassle of spinning up a private registry, pushing it in and…","headline":"Ceph Air-Gapped, Part 2: The Registry I Said I Didn’t Need","image":{"alt":"A healthy Ceph cluster and a red upgrade error from quay.io on the dashboard","url":"https://chienpanglee.github.io/assets/img/2026-10-22-ceph-air-gapped-part-2-the-registry/cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpanglee.github.io/posts/ceph-air-gapped-part-2-the-registry/"},"url":"https://chienpanglee.github.io/posts/ceph-air-gapped-part-2-the-registry/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1089,21 +1089,21 @@ then:     ceph orch upgrade start --image &lt;registry&gt;/ceph/ceph@sha256:&lt;
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Ceph%20Air-Gapped,%20Part%202:%20The%20Registry%20I%20Said%20I%20Didn't%20Need%20-%20Lee,%20Chien-Pang&url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fceph-air-gapped-part-2-the-registry%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Ceph%20Air-Gapped,%20Part%202:%20The%20Registry%20I%20Said%20I%20Didn't%20Need%20-%20Lee,%20Chien-Pang&url=https%3A%2F%2Fchienpanglee.github.io%2Fposts%2Fceph-air-gapped-part-2-the-registry%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Ceph%20Air-Gapped,%20Part%202:%20The%20Registry%20I%20Said%20I%20Didn't%20Need%20-%20Lee,%20Chien-Pang&u=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fceph-air-gapped-part-2-the-registry%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Ceph%20Air-Gapped,%20Part%202:%20The%20Registry%20I%20Said%20I%20Didn't%20Need%20-%20Lee,%20Chien-Pang&u=https%3A%2F%2Fchienpanglee.github.io%2Fposts%2Fceph-air-gapped-part-2-the-registry%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fceph-air-gapped-part-2-the-registry%2F&text=Ceph%20Air-Gapped,%20Part%202:%20The%20Registry%20I%20Said%20I%20Didn't%20Need%20-%20Lee,%20Chien-Pang" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fchienpanglee.github.io%2Fposts%2Fceph-air-gapped-part-2-the-registry%2F&text=Ceph%20Air-Gapped,%20Part%202:%20The%20Registry%20I%20Said%20I%20Didn't%20Need%20-%20Lee,%20Chien-Pang" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     

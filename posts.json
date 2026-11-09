@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Have you got the time, Ceph?",
+    "date": "2026-11-08",
+    "url": "https://chienpanglee.github.io/posts/have-you-got-the-time-ceph/",
+    "summary": "Have you got the time, Ceph? Ceph’s monitors refuse to work with a clock more than 0.05 s off (mon_clock_drift_allowed), and my own health check on the appliance flags a node past 10 s. So a node that is two minutes o...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/have-you-got-the-time-ceph-ca07a24d.webp",
+    "image_alt": "ceph -s on the first node, HEALTH_WARN clock skew detected on the second monitor"
+  },
+  {
+    "title": "Ceph Air-Gapped, Part 2: The Registry I Said I Didn't Need",
+    "date": "2026-10-22",
+    "url": "https://chienpanglee.github.io/posts/ceph-air-gapped-part-2-the-registry/",
+    "summary": "In my last post I spent days finding out why cephadm silently stalled in an air-gapped network, and the answer was two settings: point container_image at the image podman already had, and tell cephadm not to resolve t...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/ceph-air-gapped-part-2-the-registry-e0d2491c.webp",
+    "image_alt": "A healthy Ceph cluster and a red upgrade error from quay.io on the dashboard"
+  },
+  {
+    "title": "Ceph Orchestration Pitfalls",
+    "date": "2026-09-25",
+    "url": "https://chienpanglee.github.io/posts/ceph-orchestration-pitfalls/",
+    "summary": "Cloud native tools usually give me excellent user experience that they feel like a plug and play, with cool out-of-the-box capabilities like auto deployments, scaling, healing, rolling-updates, etc. This ease of use c...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/ceph-orchestration-pitfalls-d5ba7f86.webp",
+    "image_alt": "Ceph Octopus release mascot artwork"
+  },
+  {
+    "title": "Don't Want to Miss a Ball with OpenCVE",
+    "date": "2026-08-24",
+    "url": "https://chienpanglee.github.io/posts/Dont-want-to-miss-a-ball-with-OpenCVE/",
+    "summary": "A new Slack channel was created — the “Security” channel — meant to cover all sorts of security topics: CVEs, hacker news, disclosures with a high CVSS score, and so on. Team members started feeding the channel with w...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/Dont-want-to-miss-a-ball-with-OpenCVE-2a14383b.webp",
+    "image_alt": "OpenCVE, logged in"
+  },
+  {
+    "title": "Jenkins pipeline with git-lfs",
+    "date": "2026-05-15",
+    "url": "https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/",
+    "summary": "Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin Jenkins -> Job -> Pipeline Syntax -> Snippet Generator copy & paste it ...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/jenkins-pipeline-with-git-lfs-ba2d9df3.webp",
+    "image_alt": "checkout source"
+  },
+  {
+    "title": "Copying fail",
+    "date": "2026-05-12",
+    "url": "https://chienpanglee.github.io/posts/copying-fail/",
+    "summary": "Copy Fail (CVE-2026-31431) has started a fierce fire that’s gone rampant in the Linux woods. Are we exploitable? The answer is almost certain because pretty much every actively maintained enterprise distribution has i...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/copying-fail-cca9f817.webp",
+    "image_alt": "Copy Fail, Dirty Frag and Copy Fail 2"
+  },
+  {
+    "title": "Jenkins nodes are offline",
+    "date": "2026-05-04",
+    "url": "https://chienpanglee.github.io/posts/jenkins-node-are-offline/",
+    "summary": "Lab had a re-arrangement. We had decided to add a few new machines, sort the inventory and consolidate resources such as NIC cards, hard drives, memory dimms, etc. This also triggered a conscious decision of moving Je...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/jenkins-node-are-offline-010cf769.webp",
+    "image_alt": "All nodes of label ‘xxx’ are offline"
+  },
+  {
+    "title": "Jenkins CI the unseen building bricks of parallelization",
+    "date": "2026-04-30",
+    "url": "https://chienpanglee.github.io/posts/jenkins-ci-unseen-building-bricks-of-parallelization/",
+    "summary": "One of my Jenkins pipelines was set up and, without further scrutiny, it just worked. It ran multiple stages that took several hours and eventually ended in green — the kind of result that contributes to a bright, sun...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/jenkins-ci-unseen-building-bricks-of-parallelization-a9a6a699.webp",
+    "image_alt": "Jenkins drinking Goesser"
+  },
+  {
+    "title": "Small footprint of a power editor in initramfs",
+    "date": "2026-04-07",
+    "url": "https://chienpanglee.github.io/posts/small-footprint-of-a-power-editor-in-initramfs/",
+    "summary": "Have you ever found yourself trapped in a restricted root filesystem where every megabyte has to be weighed? For most people, this is a rarity, but when working with initramfs—the transient filesystem used by the Linu...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/small-footprint-of-a-power-editor-in-initramfs-98dc07e4.webp",
+    "image_alt": "emacs"
+  },
+  {
+    "title": "I don't have a say",
+    "date": "2026-04-07",
+    "url": "https://chienpanglee.github.io/posts/i-dont-have-a-say/",
+    "summary": "Why bother hussling with blogging on GitHub and put myself in a state where I have to constently struggle with writing and editing? Even at this moment this recurring question lingers in my head. All in all, it’s a co...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/i-dont-have-a-say-4e528385.webp",
+    "image_alt": "Fünftes Rad"
+  }
+]

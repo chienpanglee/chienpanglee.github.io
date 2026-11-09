@@ -31,21 +31,21 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin Jenkins -&gt; Job -&gt; Pipeline Syntax -&gt; Snippet Generator copy &amp; paste it into your pipeline script 1 2 3 4 5 6 7 8 checkout([ $class: &#39;GitSCM&#39;, branches: [[name: &#39;*/develop&#39;]], extensions: [ [$class: &#39;GitLFSPull&#39;] // This ensures LFS binaries are pulled ], userRemoteConfigs: [[url: &#39;https://github.com/bigstack-oss/cubecos.git&#39;]] ]) In a simple use case things work perfectly. It’s also true when I change url to ssh + credential. On top of these, adding submodules also works.…" />
 <meta name="twitter:description" property="og:description" content="Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin Jenkins -&gt; Job -&gt; Pipeline Syntax -&gt; Snippet Generator copy &amp; paste it into your pipeline script 1 2 3 4 5 6 7 8 checkout([ $class: &#39;GitSCM&#39;, branches: [[name: &#39;*/develop&#39;]], extensions: [ [$class: &#39;GitLFSPull&#39;] // This ensures LFS binaries are pulled ], userRemoteConfigs: [[url: &#39;https://github.com/bigstack-oss/cubecos.git&#39;]] ]) In a simple use case things work perfectly. It’s also true when I change url to ssh + credential. On top of these, adding submodules also works.…" />
-<link rel="canonical" href="https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/" />
-<meta property="og:url" content="https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/" />
+<link rel="canonical" href="https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/" />
+<meta property="og:url" content="https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/" />
 <meta property="og:site_name" content="Lee, Chien-Pang" />
-<meta property="og:image" content="https://chienpang.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png" />
+<meta property="og:image" content="https://chienpanglee.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png" />
 <meta property="og:image:alt" content="checkout source" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-05-15T10:00:00+02:00" />
 <meta property="article:modified_time" content="2026-05-15T10:00:00+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://chienpang.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png" />
+<meta name="twitter:image" content="https://chienpanglee.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png" />
 <meta name="twitter:image:alt" content="checkout source" />
 <meta name="twitter:title" content="Jenkins pipeline with git-lfs" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-15T10:00:00+02:00","datePublished":"2026-05-15T10:00:00+02:00","description":"Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin Jenkins -\u0026gt; Job -\u0026gt; Pipeline Syntax -\u0026gt; Snippet Generator copy \u0026amp; paste it into your pipeline script 1 2 3 4 5 6 7 8 checkout([ $class: \u0026#39;GitSCM\u0026#39;, branches: [[name: \u0026#39;*/develop\u0026#39;]], extensions: [ [$class: \u0026#39;GitLFSPull\u0026#39;] // This ensures LFS binaries are pulled ], userRemoteConfigs: [[url: \u0026#39;https://github.com/bigstack-oss/cubecos.git\u0026#39;]] ]) In a simple use case things work perfectly. It’s also true when I change url to ssh + credential. On top of these, adding submodules also works.…","headline":"Jenkins pipeline with git-lfs","image":{"alt":"checkout source","url":"https://chienpang.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/"},"url":"https://chienpang.github.io/posts/jenkins-pipeline-with-git-lfs/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-15T10:00:00+02:00","datePublished":"2026-05-15T10:00:00+02:00","description":"Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin Jenkins -\u0026gt; Job -\u0026gt; Pipeline Syntax -\u0026gt; Snippet Generator copy \u0026amp; paste it into your pipeline script 1 2 3 4 5 6 7 8 checkout([ $class: \u0026#39;GitSCM\u0026#39;, branches: [[name: \u0026#39;*/develop\u0026#39;]], extensions: [ [$class: \u0026#39;GitLFSPull\u0026#39;] // This ensures LFS binaries are pulled ], userRemoteConfigs: [[url: \u0026#39;https://github.com/bigstack-oss/cubecos.git\u0026#39;]] ]) In a simple use case things work perfectly. It’s also true when I change url to ssh + credential. On top of these, adding submodules also works.…","headline":"Jenkins pipeline with git-lfs","image":{"alt":"checkout source","url":"https://chienpanglee.github.io/assets/img/2026-05-15-jenkins-pipeline-with-git-lfs/cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/"},"url":"https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1168,21 +1168,21 @@ Below is a working version for me that functions on all nodes (of different OSes
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Jenkins%20pipeline%20with%20git-lfs%20-%20Lee,%20Chien-Pang&url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fjenkins-pipeline-with-git-lfs%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Jenkins%20pipeline%20with%20git-lfs%20-%20Lee,%20Chien-Pang&url=https%3A%2F%2Fchienpanglee.github.io%2Fposts%2Fjenkins-pipeline-with-git-lfs%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Jenkins%20pipeline%20with%20git-lfs%20-%20Lee,%20Chien-Pang&u=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fjenkins-pipeline-with-git-lfs%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Jenkins%20pipeline%20with%20git-lfs%20-%20Lee,%20Chien-Pang&u=https%3A%2F%2Fchienpanglee.github.io%2Fposts%2Fjenkins-pipeline-with-git-lfs%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2Fchienpang.github.io%2Fposts%2Fjenkins-pipeline-with-git-lfs%2F&text=Jenkins%20pipeline%20with%20git-lfs%20-%20Lee,%20Chien-Pang" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fchienpanglee.github.io%2Fposts%2Fjenkins-pipeline-with-git-lfs%2F&text=Jenkins%20pipeline%20with%20git-lfs%20-%20Lee,%20Chien-Pang" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
