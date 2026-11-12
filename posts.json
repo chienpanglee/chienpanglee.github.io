@@ -1,5 +1,13 @@
 [
   {
+    "title": "No One Can Keep Up with One High-Severity Kernel CVE per Month",
+    "date": "2026-11-12",
+    "url": "https://chienpanglee.github.io/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/",
+    "summary": "An apple a day keeps the doctor away; a kernel update a month, however, is going to drive an IT vendor nuts. A kernel update implies a reboot of the Linux OS. Multiply that by the number of machines in your lab or dat...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/no-one-can-keep-up-with-one-kernel-cve-a-month-6974508c.webp",
+    "image_alt": "modprobe of twelve kernel modules refused with Operation not permitted after kernel.modules_disabled=1"
+  },
+  {
     "title": "Have you got the time, Ceph?",
     "date": "2026-11-08",
     "url": "https://chienpanglee.github.io/posts/have-you-got-the-time-ceph/",

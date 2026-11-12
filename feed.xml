@@ -4,7 +4,7 @@
   <id>https://chienpanglee.github.io/</id>
   <title>Lee, Chien-Pang</title>
   <subtitle>Free style blogging about my day to day problem-solving tasks, most likely in IT areas.</subtitle>
-  <updated>2026-11-12T06:52:01+01:00</updated>
+  <updated>2026-11-12T13:52:39+01:00</updated>
   <author>
     <name>Lee, Chien-Pang</name>
     <uri>https://chienpanglee.github.io/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>No One Can Keep Up with One High-Severity Kernel CVE per Month</title>
+    <link href="https://chienpanglee.github.io/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/" rel="alternate" type="text/html" title="No One Can Keep Up with One High-Severity Kernel CVE per Month" />
+    <published>2026-11-12T13:48:00+01:00</published>
+  
+    <updated>2026-11-12T13:48:00+01:00</updated>
+  
+    <id>https://chienpanglee.github.io/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/</id>
+    <content type="text/html" src="https://chienpanglee.github.io/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/" />
+    <author>
+      <name>Lee, Chien-Pang</name>
+    </author>
+
+  
+    
+    <category term="Tech" />
+    
+  
+
+  <summary>An apple a day keeps the doctor away; a kernel update a month, however, is going to drive an IT vendor nuts. A kernel update implies a reboot of the Linux OS. Multiply that by the number of machines in your lab or data center, not to mention the virtual machines (guest OSes) running on top of the hypervisors. And more often than not, the real gap is the window between the CVE disclosure, the up...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>A new Slack channel was created — the “Security” channel — meant to cover all sorts of security topics: CVEs, hacker news, disclosures with a high CVSS score, and so on. Team members started feeding the channel with whatever they’d learned, whether from personal subscriptions, RSS feeds, or just stumbling across it in the news; customer feedback played a role too. Over time, I couldn’t help but...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Jenkins pipeline with git-lfs</title>
-    <link href="https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/" rel="alternate" type="text/html" title="Jenkins pipeline with git-lfs" />
-    <published>2026-05-15T10:00:00+02:00</published>
-  
-    <updated>2026-05-15T10:00:00+02:00</updated>
-  
-    <id>https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/</id>
-    <content type="text/html" src="https://chienpanglee.github.io/posts/jenkins-pipeline-with-git-lfs/" />
-    <author>
-      <name>Lee, Chien-Pang</name>
-    </author>
-
-  
-    
-    <category term="Tech" />
-    
-  
-
-  <summary>Stage number one of a typical Jenkins pipeline: checking out source. How do I do that when my version control system is git.1. install git plugin     Jenkins -&amp;gt; Job -&amp;gt; Pipeline Syntax -&amp;gt; Snippet Generator    copy &amp;amp; paste it into your pipeline script     checkout([  $class: 'GitSCM',   branches: [[name: '*/develop']],   extensions: [      [$class: 'GitLFSPull'] // This ensures LFS b...</summary>
 
   </entry>
 
