@@ -2494,6 +2494,13 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/apparmor-silenced-rsyslog-relp-tls/">The Log Forwarding That Never Worked: AppArmor and rsyslog's RELP+TLS</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/">No One Can Keep Up with One High-Severity Kernel CVE per Month</a>
         </li>
       
@@ -2516,13 +2523,6 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
         
         <li class="text-truncate lh-lg">
           <a href="/posts/ceph-orchestration-pitfalls/">Ceph Orchestration Pitfalls</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Dont-want-to-miss-a-ball-with-OpenCVE/">Don't Want to Miss a Ball with OpenCVE</a>
         </li>
       
     </ul>
@@ -2551,20 +2551,6 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2584,12 +2570,17 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
     
     
     
+      
+    
   
     
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -2604,6 +2595,84 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -2630,7 +2699,13 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
         <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/apparmor/">apparmor</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/rsyslog/">rsyslog</a>
       
     </div>
   </section>
@@ -2680,6 +2755,18 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -2808,7 +2895,7 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/" class="post-preview card h-100">
+          <a href="/posts/apparmor-silenced-rsyslog-relp-tls/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2820,16 +2907,16 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
 
 <time
   
-  data-ts="1794487680"
+  data-ts="1795485600"
   data-df="ll"
   
 >
-  Nov 12, 2026
+  Nov 24, 2026
 </time>
 
-              <h4 class="pt-0 my-2">No One Can Keep Up with One High-Severity Kernel CVE per Month</h4>
+              <h4 class="pt-0 my-2">The Log Forwarding That Never Worked: AppArmor and rsyslog's RELP+TLS</h4>
               <div class="text-muted">
-                <p>An apple a day keeps the doctor away; a kernel update a month, however, is going to drive an IT vendor nuts. A kernel update implies a reboot of the Linux OS. Multiply that by the number of machine...</p>
+                <p>As one of my security lockdowns for running systems, I adopted AppArmor, a Linux Security Module (LSM) that provides mandatory access control (MAC) for applications, to fortify the system’s protect...</p>
               </div>
             </div>
           </a>
@@ -2864,7 +2951,7 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
         </article>
       
         <article class="col">
-          <a href="/posts/have-you-got-the-time-ceph/" class="post-preview card h-100">
+          <a href="/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2876,16 +2963,16 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
 
 <time
   
-  data-ts="1794103200"
+  data-ts="1794487680"
   data-df="ll"
   
 >
-  Nov  8, 2026
+  Nov 12, 2026
 </time>
 
-              <h4 class="pt-0 my-2">Have you got the time, Ceph?</h4>
+              <h4 class="pt-0 my-2">No One Can Keep Up with One High-Severity Kernel CVE per Month</h4>
               <div class="text-muted">
-                <p>Have you got the time, Ceph? Ceph’s monitors refuse to work with a clock more than 0.05 s off (mon_clock_drift_allowed), and my own health check on the appliance flags a node past 10 s. So a node t...</p>
+                <p>An apple a day keeps the doctor away; a kernel update a month, however, is going to drive an IT vendor nuts. A kernel update implies a reboot of the Linux OS. Multiply that by the number of machine...</p>
               </div>
             </div>
           </a>
@@ -2992,20 +3079,6 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3025,12 +3098,17 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
     
     
     
+      
+    
   
     
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -3045,6 +3123,84 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -3071,7 +3227,13 @@ cd /opt/opencve/opencve-3.1.0/docker &amp;&amp; docker compose exec -T \
         <a class="post-tag btn btn-outline-primary" href="/tags/storage/">Storage</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/apparmor/">apparmor</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/minds/">minds</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/rsyslog/">rsyslog</a>
       
     </div>
   </section>

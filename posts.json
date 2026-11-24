@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Log Forwarding That Never Worked: AppArmor and rsyslog's RELP+TLS",
+    "date": "2026-11-24",
+    "url": "https://chienpanglee.github.io/posts/apparmor-silenced-rsyslog-relp-tls/",
+    "summary": "As one of my security lockdowns for running systems, I adopted AppArmor, a Linux Security Module (LSM) that provides mandatory access control (MAC) for applications, to fortify the system’s protection in several respe...",
+    "image": "https://chienpanglee.github.io/assets/img/thumbs/apparmor-silenced-rsyslog-relp-tls-a8f50cdb.webp",
+    "image_alt": "root under the rsyslogd AppArmor profile is refused the Ceph admin keyring and a write to /usr/sbin, with the two kernel denial lines"
+  },
+  {
     "title": "No One Can Keep Up with One High-Severity Kernel CVE per Month",
     "date": "2026-11-12",
     "url": "https://chienpanglee.github.io/posts/no-one-can-keep-up-with-one-kernel-cve-a-month/",

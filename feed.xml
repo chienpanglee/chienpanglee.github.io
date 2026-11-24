@@ -4,7 +4,7 @@
   <id>https://chienpanglee.github.io/</id>
   <title>Lee, Chien-Pang</title>
   <subtitle>Free style blogging about my day to day problem-solving tasks, most likely in IT areas.</subtitle>
-  <updated>2026-11-12T13:52:39+01:00</updated>
+  <updated>2026-11-24T11:51:22+01:00</updated>
   <author>
     <name>Lee, Chien-Pang</name>
     <uri>https://chienpanglee.github.io/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>The Log Forwarding That Never Worked: AppArmor and rsyslog's RELP+TLS</title>
+    <link href="https://chienpanglee.github.io/posts/apparmor-silenced-rsyslog-relp-tls/" rel="alternate" type="text/html" title="The Log Forwarding That Never Worked: AppArmor and rsyslog&amp;apos;s RELP+TLS" />
+    <published>2026-11-24T03:00:00+01:00</published>
+  
+    <updated>2026-11-24T03:00:00+01:00</updated>
+  
+    <id>https://chienpanglee.github.io/posts/apparmor-silenced-rsyslog-relp-tls/</id>
+    <content type="text/html" src="https://chienpanglee.github.io/posts/apparmor-silenced-rsyslog-relp-tls/" />
+    <author>
+      <name>Lee, Chien-Pang</name>
+    </author>
+
+  
+    
+    <category term="Notes" />
+    
+  
+
+  <summary>As one of my security lockdowns for running systems, I adopted AppArmor, a Linux Security Module (LSM) that provides mandatory access control (MAC) for applications, to fortify the system’s protection in several respects. As usual, all was good until I trod, once again, on the hard-to-avoid trade-offs of enforcing security hardening.  I added a cluster log: every node forwards its security-rele...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>Cloud native tools usually give me excellent user experience that they feel like a plug and play, with cool out-of-the-box capabilities like auto deployments, scaling, healing, rolling-updates, etc. This ease of use convenience, however, is usually under the big assumption that it’s internet-reachable. This has always been my encounter with orchestration tools and infra. They are not air-gap fr...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Don't Want to Miss a Ball with OpenCVE</title>
-    <link href="https://chienpanglee.github.io/posts/Dont-want-to-miss-a-ball-with-OpenCVE/" rel="alternate" type="text/html" title="Don&amp;apos;t Want to Miss a Ball with OpenCVE" />
-    <published>2026-08-24T10:00:00+02:00</published>
-  
-    <updated>2026-08-24T10:00:00+02:00</updated>
-  
-    <id>https://chienpanglee.github.io/posts/Dont-want-to-miss-a-ball-with-OpenCVE/</id>
-    <content type="text/html" src="https://chienpanglee.github.io/posts/Dont-want-to-miss-a-ball-with-OpenCVE/" />
-    <author>
-      <name>Lee, Chien-Pang</name>
-    </author>
-
-  
-    
-    <category term="Tech" />
-    
-  
-
-  <summary>A new Slack channel was created — the “Security” channel — meant to cover all sorts of security topics: CVEs, hacker news, disclosures with a high CVSS score, and so on. Team members started feeding the channel with whatever they’d learned, whether from personal subscriptions, RSS feeds, or just stumbling across it in the news; customer feedback played a role too. Over time, I couldn’t help but...</summary>
 
   </entry>
 
