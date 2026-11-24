@@ -743,79 +743,6 @@
     <!-- combine -->
     
   
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
 
   
 
@@ -1108,8 +1035,6 @@ rsyslogd: $WorkDirectory: /var/lib/rsyslog can not be accessed
 <p><a href="/assets/img/apparmor-silenced-rsyslog-relp-tls/h1-apparmor-rsyslogd-enforced.png" class="popup img-link shimmer"><img src="/assets/img/apparmor-silenced-rsyslog-relp-tls/h1-apparmor-rsyslogd-enforced.png" alt="aa-status, the RELP listener and the rsyslogd denials of the boot journal on a freshly installed node" title="rsyslogd confined and listening on 2514; the only denial since boot is net_admin" loading="lazy"></a></p>
 
 <p>The work directory is now pinned where the config is rendered: the third of the four unit tests of the syslog config greps the rendered <code class="language-plaintext highlighter-rouge">rsyslog.conf</code> for exactly that line.</p>
-
-<p><a href="/assets/img/apparmor-silenced-rsyslog-relp-tls/unit-tests-config-syslogd.png" class="popup img-link shimmer"><img src="/assets/img/apparmor-silenced-rsyslog-relp-tls/unit-tests-config-syslogd.png" alt="the four unit tests of the syslog config, all run" title="four unit tests of the rendered syslog config; the third checks the work directory" loading="lazy"></a></p>
 
 <h2 id="what-the-lockdown-was-really-testing"><span class="me-2">What the lockdown was really testing</span><a href="#what-the-lockdown-was-really-testing" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
